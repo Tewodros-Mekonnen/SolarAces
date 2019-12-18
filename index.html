@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header" >
                 <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#navbar-collapse-main" >
@@ -23,16 +23,17 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#" ><img width="100px" height="55px" src="./assets/logo.png"></a>
+                <a class="navbar-brand" href="#" ><img width="100px" height="55px" src="./assets/logo2.png"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse-main" >
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Team Members</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#team-members">Team Members</a></li>
+                    <li><a href="#our-projects">Projects</a></li>
+                    <li><a href="https://drive.google.com/file/d/1-4TsP_BE4NSdKvfZ9S9FsXxJPgWIdwVN/view?usp=sharing">Achievemnts</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             
@@ -42,122 +43,202 @@
     <div id="home">
         <div class="landing-text">
             <h1>SOLAR ACES</h1>
-            <h3>A Group of Science and Engineering Students</h3>
-            <a href="#" class="btn btn-default btn-lg">More About Us</a> 
+            <h3>A Group of Science, Technology and Engineering Students</h3>
+            <a href="#about-us" class="btn btn-default btn-lg">More About Us</a> 
         </div>
     </div>
 
-    <!-- *** the two column section, who we are section*** --> 
-    <div class="padding">
+    <!-- *** two column, who we are section*** --> 
+    <div id="about-us" class="padding">
         <div class="container">
+             
+            <div class="row text-center">
+                <h2>WHO WE ARE AND OUR MISSION</h2>
+            </div>
+            <br>
             <div class="row">
-                <div class="col-sm-6 ">
-                    <img width="650px" height="400px" src="./assets/org-chart.png" class="img-responsive">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 org-chart"> <!--first setting class="col-sm-6-->
+                    <img width="650px" height="400px" src="./assets/org-chart.png" class="img-responsive img">
                 </div>
 
-                <div class="col-sm-6  text-center">
-                    <h2>WHO WE ARE AND OUR MISSION</h2>
-                    <p class="lead">we are a group of highly creative and motivated
-                                    students gather together from different higher
-                                    institutions and formed a team known as Solar Aces.
-                                    currently, we are participating in the L'Space summer 2019
-                                    program initiated by NASA, and we are under team-14. The current project
-                                    that we are working on is building a probe that is
-                                    loaded with science instruments and landing it on
-                                    one of the hydrocarbon lakes (Kraken Mare) found
-                                    in one of Saturns moon Titan.</p>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 who-we-are-text text-center"> <!--first setting class="col-sm-6-->
+                    <p class="lead"> we are a group of highly motivated and creative science, technology and engineering students 
+                                     gather together from different higher institutions and we were able to form a 
+                                     team known as Solar Aces. Currently, we are participating in the Summer 2019, NASA L'Space 
+                                     Academy. In this program, our team is classified under Team-14. 
+                                     Our mission is to apply our science and engineering knowledge to make everyone's life 
+                                     safe and more efficient here on Earth and beyond.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- *** team members pics *** -->
-    <!-- <div class="container team-members" >
-            <div class="team-text text-center">
-                <h1>Team Members</h1>
-            </div>
-            <div class="image" >
-                <div class="zone"><img width="350px" height="350px" src="./assets/tewodros.png" ></div>
-                <div class="zone"><img width="350px" height="350px" src="./assets/justin.png" ></div>
-                <div class="zone"><img width="350px" height="350px" src="./assets/david.png" ></div>
-                <img width="350px" height="350px" src="./assets/briana.png" >
-                <img width="350px" height="350px" src="./assets/philip.png" >
-                <img width="350px" height="350px" src="./assets/hunter.png" >
-                <img width="350px" height="350px" src="./assets/khoa.png" >
-                <img width="350px" height="350px" src="./assets/matthew.png">
-                <img width="350px" height="350px" src="./assets/carlton.png">
-            </div>
-    </div> -->
-
-    <div class="container">
+    <!-- *** Team Members *** -->
+    <div id="team-members" class="container team-pic">
+        <h2 class="text-center">Team Members</h2>
+        <!--*** first row ***-->
         <div class="row">
-            <div class="col">
-                    <img width="350px" height="350px" src="./assets/tewodros.png" >
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="team-image">
+                    <a href="./assets/tewodros-lg.png">
+                        <img  class="image " src="./assets/tewodros.png" alt="" style="width: 100%;">
+                    </a>
+                </div>
             </div>
-
-            <div class="col">
-                    <img width="350px" height="350px" src="./assets/justin.png" >
-            </div>
-
-            <div class="col">
-                    <img width="350px" height="350px" src="./assets/david.png" >
-            </div>
-
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="team-image">
+                            <a href="./assets/justin.png">
+                                <img class="image " src="./assets/justin.png" alt="" style="width: 100%;">
+                            </a>
+                        </div>
+            </div> 
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="team-image">
+                            <a href="./assets/david.png">
+                                <img class="image " src="./assets/david.png" alt="" style="width: 100%;">
+                            </a>
+                        </div>
+            </div>           
         </div>
 
+        <!-- *** second row *** -->
         <div class="row">
-                <div class="col">
-                        <img width="350px" height="350px" src="./assets/briana.png" >
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="team-image">
+                        <a href="./assets/hunter.png">
+                            <img class="image " src="./assets/hunter.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
                 </div>
-    
-                <div class="col">
-                        <img width="350px" height="350px" src="./assets/philip.png" >
-                </div>
-    
-                <div class="col">
-                        <img width="350px" height="350px" src="./assets/hunter.png" >
-                </div>
-    
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="team-image">
+                                <a href="./assets/philip.png">
+                                    <img class="image" src="./assets/philip.png" alt="" style="width: 100%;">
+                                </a>
+                            </div>
+                </div> 
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="team-image">
+                                <a href="./assets/matthew.png">
+                                    <img class="image " src="./assets/matthew.png" alt="" style="width: 100%;">
+                                </a>
+                            </div>
+                </div>           
             </div>
-    
 
-
-
-    </div>
-
-
+            <!-- *** third row *** -->
+            <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="team-image">
+                            <a href="./assets/khoa.png">
+                                <img class="image" src="./assets/khoa.png" alt="" style="width: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="team-image">
+                                    <a href="./assets/carlton.png">
+                                        <img class="image " src="./assets/carlton.png" alt="" style="width: 100%;">
+                                    </a>
+                                </div>
+                    </div> 
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="team-image">
+                                    <a href="./assets/briana.png">
+                                        <img class="image " src="./assets/briana.png" alt="" style="width: 100%;">
+                                    </a>
+                                </div>
+                    </div>           
+                </div>
+    </div>  <!--*** pic container div-->
     
 
     <!-- *** the four column section, our project section *** -->
-    <div class="padding">
+    <div id="our-projects" class="padding">
         <div class="container">
+            <div class="row text-center project">
+                    <h2>OUR PROJECT</h2>
+            </div>
+            <br>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                        <h1>OUR PROJECT</h1>
-                        <P class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Est ducimus consequuntur natus voluptate corporis amet 
-                            odio nulla blanditiis,officiis nesciunt. Nam velit maiores 
-                            consectetur alias nostrum provident repellat in quasi!</P>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center PDR">
+                        <P class="lead">Summer of 2019, we were part of the L'Space Mission Concept Academy. In this Academy, we were able 
+                            to make ourselves familiar with what is needed to take a design concept from an idea to understanding 
+                            all the rigorous elements needed to become a mission. 
+                            we were also given a task to prepare 22 page PDR (Preliminary Design Review) that shows what is needed to land a 
+                            Probe on Titan, Saturn's moon!
+                            Every mission in NASA has to have a PDR. 
+                            The purpose of the PDR is to demonstrate that the preliminary design meets all system 
+                            requirements with acceptable risk and within the cost and schedule constraints 
+                            and that it establishes the basis for proceeding with detailed design.<br>
+                            <span>
+                                <a href="https://docs.google.com/document/d/e/2PACX-1vTGpSkJ_HFNs1lag3DTC_8lii5-Te6c4PN0beYO4TlwI2n89AA4Z6LNBCVKvZmOoHcarNZLmOSAekEQ/pub" >View our PDR</a>
+                            </span>   
+                            </P>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img width="850px" height="800px" src="./assets/science-payload.png" class="img-responsive" >
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                        <P class="lead">Our mission was to design a Probe loaded with a variety of scientific instruments 
+                            that will be used to collect scientific data. This Probe will be a secondary payload on a Titan orbiter spacecraft. 
+                            While the orbiter spacecraft orbits Titan, the second-largest moon in our solar system, 
+                            we will detach and descent our Probe into Titan's atmosphere and land it 
+                            on one of the largest hydrocarbon lake (Kraken Mare) found on Titan. 
+                            Once we successfully land the Probe on this lake, we will be 
+                            expected to collect a fluid sample from the lake as well as other scientific data 
+                            that will be helpful to learn more about this moon.   
+                           </P>
                 </div>
+            </div> 
+            <br>
+            <br>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-                        <P class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Est ducimus consequuntur natus voluptate corporis amet 
-                                odio nulla blanditiis,officiis nesciunt. Nam velit maiores 
-                                consectetur alias nostrum provident repellat in quasi!</P>
-                </div>
-
-                
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <img width="850px" height="800px" src="./assets/prob1.png" class="img-responsive" >
-                        <img width="850px" height="800px" src="./assets/prob2.png" class="img-responsive" >
+            <div class="row probe-heading" >
+                <div class="heading col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h2>Our design of the Probe and scientific instruments configuration.</h2>
                 </div>
             </div>
-        </div>
+            <br>
+
+            <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <img width="850px" height="800px" src="./assets/science-payload.png" class="img-responsive" >
+                    </div>
+            </div> 
+            <br>
+            <br>
+
+            <div class="row probe-landing" >
+                    <div class="landing col-lg-12 col-md-12 col-sm-12 text-center">
+                        <h2>Descent and landing procedures of the Probe on the lake. </h2>
+                    </div>
+            </div>
+            <br>
+
+            <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <img width="850px" height="800px" src="./assets/probe-landing.PNG" class="img-responsive" >
+                    </div>
+            </div> 
+            <br>
+            <br>
+
+            <div class="row probe-floating" >
+                    <div class="floating col-lg-12 col-md-12 col-sm-12 text-center">
+                        <h2>Probe floating on the hydrocarbon lake</h2>
+                    </div>
+            </div>
+                <br>
+            
+            <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img width="850px" height="800px" src="./assets/prob1.png" class="img-responsive" >
+                    </div> 
+            
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img width="850px" height="800px" src="./assets/prob2.png" class="img-responsive" >
+                    </div>
+            </div>
+        </div>    
     </div>
 
     <!-- *** the fixed background section ***  -->
@@ -168,27 +249,42 @@
     <!-- *** the two column section *** -->
     <div class="padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 ">
+
+                <div class="row text-center about-titan">
                         <h4>MORE ABOUT TITAN</h4>
-                        <p> we are a group of highly creative and motivated
-                            students gather together from different higher
-                            institutions and formed a team known as Solar Aces.
-                            currently, we are participating in the L'Space summer 2019
-                            program and we are under team-14. The current project
-                            that we are working on is building a probe that is
-                            loaded with science instruments and landing it on
-                            one of the hydrocarbon lakes (Kraken Mare) found
-                            in one of Saturns moon Titan.</p>
-                            <p> we are a group of highly creative and motivated
-                                students gather together from different higher
-                                institutions and formed a team known as Solar Aces.
-                                currently, we are participating in the L'Space summer 2019
-                                program and we are under team-14. The current project
-                                that we are working on is building a probe that is
-                                loaded with science instruments and landing it on
-                                one of the hydrocarbon lakes (Kraken Mare) found
-                                in one of Saturns moon Titan.</p>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <p>Saturns largest moon, Titan, is an icy world whose surface is completly obscured
+                            by a golden hazy atmosphere. Titan is the second largest moon in our solar system. 
+                            Titan is bigger than Earth's moon, and larger than even the planet Mercury. 
+                            This mammoth moon is the only moon in the solar system with a dense atmosphere, 
+                            and it’s the only world besides Earth that has standing bodies of liquid, including rivers, 
+                            lakes and seas, on its surface. Like Earth, Titan’s atmosphere is primarily nitrogen, 
+                            plus a small amount of methane. It is the sole other place in the solar system known 
+                            to have an earthlike cycle of liquids raining from clouds, flowing across its surface, 
+                            filling lakes and seas, and evaporating back into the sky (akin to Earth’s water cycle).
+                            Titan is also thought to have a subsurface ocean of water</p>
+                            <p> Titan has a radius of about 1,600 miles (2,575 kilometers), and is nearly 50 percent 
+                                wider than Earth’s moon. Titan is about 759,000 miles (1.2 million kilometers) from Saturn, 
+                                which itself is about 886 million miles (1.4 billion kilometers) from the Sun, 
+                                or about 9.5 astronomical units (AU). One AU is the distance from Earth to the Sun.
+                                Light from the Sun takes about 80 minutes to reach Titan; because of the distance, 
+                                sunlight is about 100 times fainter at Saturn and Titan than at Earth.
+                                Titan takes 15 days and 22 hours to complete a full orbit of Saturn. Titan is also tidally 
+                                locked in synchronous rotation with Saturn, meaning that, like Earth’s Moon, 
+                                Titan always shows the same face to the planet as it orbits. 
+                                Saturn takes about 29 Earth years to orbit the Sun (a Saturnian year), 
+                                and Saturn’s axis of rotation is tilted like Earth’s, resulting in seasons. 
+                                But Saturn’s longer year produces seasons that each last more than seven Earth years. 
+                                Since Titan orbits roughly along Saturn’s equatorial plane, 
+                                and Titan’s tilt relative to the sun is about the same as Saturn’s, 
+                                Titan’s seasons are on the same schedule as Saturn’s—seasons that last more than seven Earth years, 
+                                and a year that lasts 29 Earth years.<br>
+                                <br>
+                                <span>(2019, April 25). NASA Science, SOLAR SYSTEMS EXPLORATIONS. Retrieved from https://solarsystem.nasa.gov/moons/saturn-moons/titan/in-depth/ </span>
+                                </p>
                     </div>
 
                     <div class="col-sm-6 ">
@@ -201,26 +297,36 @@
         <!-- *** footer *** -->
         <footer class="container-fluid text-center">
             <div class="row">
-                <div class="col-sm-4">
-                    <h3>Contact Us</h3>
+                <div id="contact" class=" col-lg-4 col-md-12 col-sm-12 contact ">
+                    <a target="_blank" id="contact-us" href="mailto:tew.meko@gmail.com">Contact us</a>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-lg-4 col-md-12 col-sm-12 ">
                     <h3>Connect</h3>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-google"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="https://twitter.com/TewodrosTM" class="fa fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/tewodros-mekonnen-0b3157185/" class="fa fa-linkedin"></a>
                 </div>
 
-                <div class="col-sm-4">
-                    <a href="#"><img width="150px" height="100px" src="./assets/logo.png" class="icon"></a>
+                <div class="col-lg-4 col-md-12 col-sm-12 ">
+                    <a href="#"><img width="150px" height="100px" src="./assets/logo2.png" class="icon"></a>
+                </div>
+            </div>
+
+            <div id="developed-with" class="row" >
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center" >
+                    <p class="footer-text" >
+                       © 2019 - Developed with 
+                       <i
+                            style="color: #dc3545; font-size: 1.8 rem;"
+                            class="fa fa-heart px-2"
+                       ></i> 
+                            by
+                        <a href="https://github.com/Tewodros-Mekonnen" target="_blank">Tewodros Mekonnen</a>
+
+                    </p>
                 </div>
             </div>
         </footer>
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

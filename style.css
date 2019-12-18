@@ -2,9 +2,9 @@ html, body{
     width: 100%;
     height: 100%;
 }
-
 .navbar{
     background-color: #23415c;
+    border-color:#23415c;
     padding: 1% 0;
     font-size: 1.2em;
 }
@@ -24,6 +24,7 @@ html, body{
 
 #home{
     background: url(./assets/titan4.png) no-repeat center center fixed;
+    
     display: table;
     height: 100%;
     position: relative;
@@ -60,6 +61,12 @@ html, body{
 .landing-text a:hover{
     color: wheat;
 }
+
+.row h2, .team-pic h2, .project h2{
+    font-size: 300%;
+    font-weight: 700;
+    color: #000719;
+}
 .padding {
     padding: 80px 0;
 }
@@ -67,20 +74,11 @@ html, body{
     width: 100%;
 }
 
-/* .container .team-members .image{
-    display:grid;
-    grid-gap: 80px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
-    transition: all 0.3s linear; 
-}  */
-
-/* .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-} */
+.container .image{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
 
 .team-text h1{
     font-size: 500%;
@@ -95,37 +93,94 @@ html, body{
     position: relative;
     width: 100%;
     background-size: cover;
-
 }
 
-footer{
+.about-titan h4{
+    font-size: 200%;
+    font-weight: 600;
+}
+.lead a{
+    font-weight: 600;
+}
+
+footer {
     width: 100%;
     background-color: #23415c;
     padding: 1%;
     color: white;
 }
 
+#contact-us {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+#contact-us:hover{
+    text-decoration: none;
+    color: red;
+}
+
+footer .fa:hover{
+    color: red;
+    text-decoration: none;
+}
 .fa{
     padding: 15px;
     font-size: 25px;
     color: white;
 }
-.fa:hover{
-    color: thistle;
-    text-decoration: none;
-}
 
 .icon{
     max-width: 200px;
-
 }
 
-@media(max-width: 768px){
+#developed-with a{
+    color: white;
+}
+#developed-with a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+@media(max-width:400px){ /* iphone 6/7/8 plus*/
+
+    .navbar-header {
+        padding-right: 5px;
+    }
+    .navbar-brand{
+        padding-left: 5px;
+    }
     .landing-text h1{
         font-size: 300%;
+        padding-right: 30px;
     }
     .landing-text h3{
-        font-size: 150%;
+        font-size: 110%;
+        padding-right: 30px;
+    }
+    .landing-text a{
+        margin: 30px 30px 0px 0px;
+    }
+
+    .row h2{
+        margin: 0px 35px 0px 35px;
+        font-size: 200%;
+    }
+    .padding img{
+        padding: 0px 35px 0px 35px;
+    }
+    .padding p{
+        margin: 20px;
+    }
+    .team-pic h2{
+        margin: 5px;
+        font-size: 200%;
+    }
+    .image{
+        padding: 40px;
+        margin-left: 5px;
     }
     .fa{
         font-size: 20px;
@@ -135,7 +190,38 @@ footer{
         padding-top: 5px;
         max-width: 100px;
     }
+    .who-we-are-text p{
+        padding: 20px;
+    }
 }
+
+@media (max-width: 768px){
+    .navbar-header {
+        padding-right: 25px;
+    }
+}
+
+@media (min-width: 768px){
+     .navbar-right{
+        margin-right: 30px;
+    }
+    .container .team-image .image{
+        width: 250px;
+        height: 350px;
+    }
+    .container{
+        padding-right: 80px;
+    }
+}
+
+@media (max-width:414px){
+    .container{
+        padding-right: 50px;
+    }
+}
+
+
+
 
 
  
