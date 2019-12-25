@@ -21,10 +21,12 @@ html, body{
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active  {
     color:wheat;
 }
+#navbar-collapse-main ul.nav.navbar-nav.navbar-right li a{
+    color: white;
+}
 
 #home{
     background: url(./assets/titan4.png) no-repeat center center fixed;
-    
     display: table;
     height: 100%;
     position: relative;
@@ -85,6 +87,14 @@ html, body{
     font-weight: 700;
     color: #000719;
 }
+ span a{
+    color: red;
+    text-decoration: none;
+}
+
+span a:hover{
+    text-decoration: none;
+}
 
 #fixed {
     background: url(./assets/titan5.png) no-repeat center center fixed;
@@ -121,28 +131,37 @@ footer {
     color: red;
 }
 
+a.fa.fa-twitter,.fa-linkedin{
+    font-size: 23px;
+    color: white;
+    padding: 0px 7px 0px 7px;
+    text-decoration: none;
+}
+a.fa.fa-linkedin{
+    text-decoration: none;
+    color: white;
+}
+p.footer-text{
+    color: gray;
+}
+p.footer-text a{
+    text-decoration: none;
+    color: gray;
+}
+
 footer .fa:hover{
     color: red;
     text-decoration: none;
-}
-.fa{
-    padding: 15px;
-    font-size: 25px;
-    color: white;
 }
 
 .icon{
     max-width: 200px;
 }
 
-#developed-with a{
-    color: white;
-}
 #developed-with a:hover{
     text-decoration: none;
     color: red;
 }
-
 
 @media(max-width:400px){ /* iphone 6/7/8 plus*/
 
@@ -219,6 +238,13 @@ footer .fa:hover{
         padding-right: 50px;
     }
 }
+@media only screen and (max-width:414px){
+    p.footer-text, i.fa.fa-heart.px-2, p.footer-text a{
+        font-size: 11px;
+    } 
+}
+
+
 
 
 
